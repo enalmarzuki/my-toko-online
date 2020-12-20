@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -69,12 +70,13 @@ function Navbar() {
             </a>
           </div>
           <div className="flex  flex-col lg:flex-row">
-            <a
-              href="/"
+            <Link
+              to="/login"
               className="block text-white hover:text-gray-200 px-4 py-3 lg:py-5"
             >
               Sign In
-            </a>
+            </Link>
+
             <a
               href="/"
               className="block text-white hover:text-gray-200 px-4 py-3 lg:py-5"

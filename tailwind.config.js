@@ -5,13 +5,14 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        teal: colors.teal,
+      container: {
+        center: "true",
+        padding: "1rem",
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
