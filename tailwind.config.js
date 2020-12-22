@@ -9,6 +9,12 @@ module.exports = {
         center: "true",
         padding: "1rem",
       },
+      colors: {
+        secondary: "#FFD200",
+      },
+      fontFamily: {
+        body: ["Khula", "sans-serif"],
+      },
     },
   },
   variants: {

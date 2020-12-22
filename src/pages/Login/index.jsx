@@ -2,9 +2,9 @@ import React from "react";
 import Button from "../../components/Button";
 import Layout from "../../components/Layout";
 
-export default function Login() {
+export default function Login(props) {
   return (
-    <Layout title="Login">
+    <Layout title="Login" {...props}>
       <div className="container">
         <div className="flex">
           <div className="w-full lg:w-1/3">
