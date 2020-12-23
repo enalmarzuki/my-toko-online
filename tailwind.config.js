@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         secondary: "#FFD200",
+        blueSecondary: "#9DC0FB",
       },
       fontFamily: {
         body: ["Khula", "sans-serif"],
