@@ -2,3 +2,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ms-overflow-style {
+      -ms-overflow-style: none;
+    }
+
+    .scroll-bar-width {
+      scrollbar-width: none;
+    }
+  }
+}
+
+/* #enal::-webkit-scrollbar {
+  display: none;
+}
+
+#enal {
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+
+} */
