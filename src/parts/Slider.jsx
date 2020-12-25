@@ -4,15 +4,15 @@ import Card from "../components/Card";
 import Container from "../components/Container";
 
 export default function Slider(props) {
-  const { data } = props;
+  const { data, idSlide, isAllCategory } = props;
 
   const slideRight = async (e) => {
-    const sliderContainer = document.querySelector(`#${data.id}`);
+    const sliderContainer = document.querySelector(`#${idSlide}`);
     sliderContainer.scrollLeft += 557;
   };
 
   const slideLeft = (e) => {
-    const sliderContainer = document.querySelector(`#${data.id}`);
+    const sliderContainer = document.querySelector(`#${idSlide}`);
     sliderContainer.scrollLeft -= 557;
   };
 
@@ -39,19 +39,27 @@ export default function Slider(props) {
           </svg>
         </button>
         <div
-          className="w-full inline-block whitespace-nowrap overflow-x-scroll scroll  overflow-y-visible smooth-scroll"
-          id={data.id}
+          className="w-full inline-block whitespace-nowrap overflow-x-scroll scroll  overflow-y-visible smooth-scroll shadowSlide"
+          id={idSlide}
         >
-          {data.category.map((item, i) => {
-            return (
+          {data.map((item, i) =>
+            isAllCategory ? (
               <Card
                 key={i}
                 imgUrl={item.imgUrl}
                 title={item.title}
+                price={item.price === undefined ? null : item.price}
                 isAllCategory
               />
-            );
-          })}
+            ) : (
+              <Card
+                key={i}
+                imgUrl={item.imgUrl}
+                title={item.title}
+                price={item.price}
+              />
+            )
+          )}
         </div>
         <button
           className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300"

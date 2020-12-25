@@ -17,7 +17,7 @@ module.exports = {
         body: ["Khula", "sans-serif"],
       },
       height: {
-        sixPercent: "75%",
+        sixPercent: "70%",
       },
     },
   },
