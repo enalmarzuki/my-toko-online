@@ -16,6 +16,18 @@
     .scroll-bar-width {
       scrollbar-width: none;
     }
+
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+    }
   }
 }
 

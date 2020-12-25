@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         body: ["Khula", "sans-serif"],
       },
+      height: {
+        sixPercent: "75%",
+      },
     },
   },
   variants: {

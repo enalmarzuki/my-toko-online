@@ -13,114 +13,128 @@ import pakaianWanita from "../../assets/image/pakaian-wanita.png";
 import jamTangan from "../../assets/image/jam-tangan.png";
 import elektronik from "../../assets/image/elektronik.png";
 import laptop from "../../assets/image/laptop.png";
+import sepatu from "../../assets/image/sepatu.jpg";
+
+import TitleSection from "../../parts/TitleSection";
+import Card from "../../components/Card";
+import Slider from "../../parts/Slider";
+import { postcssPlugin } from "autoprefixer";
+
+const dataCategory = {
+  allCategorys: {
+    id: "asd31123",
+    title: "Semua Kategori",
+    description: "Silahkan Pilih Kategori Yang Tersedia Di Toko Kami",
+    category: [
+      {
+        id: "asd31123",
+        title: "Sepatu Pria",
+        imgUrl: sepatuPria,
+      },
+
+      {
+        id: "asd31123",
+        title: "Sepatu Wanita",
+        imgUrl: sepatuWanita,
+      },
+
+      {
+        id: "asd31123",
+        title: "Tas Pria",
+        imgUrl: tasPria,
+      },
+      {
+        id: "asd31123",
+        title: "Tas Wanita",
+        imgUrl: tasWanita,
+      },
+
+      {
+        id: "asd31123",
+        title: "Pakaian Pria",
+        imgUrl: pakaianPria,
+      },
+
+      {
+        id: "asd31123",
+        title: "Pakaian Wanita",
+        imgUrl: pakaianWanita,
+      },
+      {
+        id: "asd31123",
+        title: "Jam Tangan",
+        imgUrl: jamTangan,
+      },
+
+      {
+        id: "asd31123",
+        title: "Laptop",
+        imgUrl: laptop,
+      },
+
+      {
+        id: "asd31123",
+        title: "Elektronik",
+        imgUrl: elektronik,
+      },
+    ],
+  },
+  produkTerlaris: {
+    id: "asd31123",
+    title: "Produk Terlaris",
+    description: "Beberapa Produk Paling Laris Yang Ada Di Toko Kami",
+  },
+};
 
 export default function Home(props) {
   return (
     <Layout title="Learn Tailwind CSS 2" {...props}>
       <Hero />
+      <TitleSection
+        title={dataCategory.allCategorys.title}
+        desc={dataCategory.allCategorys.description}
+      />
+      <Slider data={dataCategory.allCategorys} />
 
-      <Container className="mt-40">
-        <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4">
-            <h1 className="text-xl lg:text-2xl xl:text-4xl font-bold font-body mb-4 text-center">
-              Semua Kategori
-            </h1>
-            <p className="text-gray-500 text-sm xl:text-xl mb-5 font-body text-center">
-              Silahkan Pilih Kategori Yang Tersedia Di
-              <br />
-              Toko Kami
-            </p>
+      <TitleSection
+        title={dataCategory.produkTerlaris.title}
+        desc={dataCategory.produkTerlaris.description}
+      />
+
+      <Container className="pb-36">
+        <div className="flex flex-wrap -mx-4 md:items-center">
+          <div className="w-3/12 lg:w-3/12 xl:w-4/12 px-4 inline-flex">
+            <div className="box-border w-full shadow-2xl rounded-3xl overflow-hidden h-auto ">
+              <div className="overflow-hidden  h-sixPercent">
+                <img src={sepatu} alt="Terlaris" className="w-full h-full" />
+              </div>
+              <div className="box-border py-7 px-6 h-full">
+                <p className="font-semibold text-2xl mb-3">Adidas Ultraboost</p>
+                <p className="text-2xl font-semibold">Rp. 1.350.000</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </Container>
 
-      <Container className="mt-12">
-        <div className="flex items-center -mx-4 pb-28">
-          <div className="inline-block whitespace-nowrap overflow-x-scroll scroll">
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={sepatuPria} alt="Sepatu Pria" />
-                </div>
-                <p className="font-semibold text-xl text-center">Sepatu Pria</p>
+          <div className="w-3/12 lg:w-3/12 xl:w-4/12 px-4 inline-flex">
+            <div className="box-border w-full shadow-2xl rounded-3xl overflow-hidden h-auto ">
+              <div className="overflow-hidden  h-sixPercent">
+                <img src={sepatu} alt="Terlaris" className="w-full h-full" />
+              </div>
+              <div className="box-border py-7 px-6 h-full">
+                <p className="font-semibold text-2xl mb-3">Adidas Ultraboost</p>
+                <p className="text-2xl font-semibold">Rp. 1.350.000</p>
               </div>
             </div>
+          </div>
 
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={sepatuWanita} alt="Sepatu Wanita" />
-                </div>
-                <p className="font-semibold text-xl text-center">
-                  Sepatu Wanita
-                </p>
+          <div className="w-3/12 lg:w-3/12 xl:w-4/12 px-4 inline-flex">
+            <div className="box-border w-full shadow-2xl rounded-3xl overflow-hidden h-auto ">
+              <div className="overflow-hidden  h-sixPercent">
+                <img src={sepatu} alt="Terlaris" className="w-full h-full" />
               </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={tasPria} alt="Tas Pria" />
-                </div>
-                <p className="font-semibold text-xl text-center">Tas Pria</p>
-              </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={tasWanita} alt="Tas Wanita" />
-                </div>
-                <p className="font-semibold text-xl text-center">Tas Wanita</p>
-              </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={pakaianPria} alt="Pakaian Pria" />
-                </div>
-                <p className="font-semibold text-xl text-center">
-                  Pakaian Pria
-                </p>
-              </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={pakaianWanita} alt="Pakaian Wanita" />
-                </div>
-                <p className="font-semibold text-xl text-center">
-                  Pakaian Wanita
-                </p>
-              </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={jamTangan} alt="Jam Tangan" />
-                </div>
-                <p className="font-semibold text-xl text-center">Jam Tangan</p>
-              </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={laptop} alt="Laptop" />
-                </div>
-                <p className="font-semibold text-xl text-center">Laptop</p>
-              </div>
-            </div>
-
-            <div className="w-1/1 lg:w-3/12 xl:w-2/12 px-4 inline-flex">
-              <div className="box-border bg-blueSecondary rounded-3xl px-2 py-4">
-                <div className="h-28 overflow-hidden flex items-center justify-center">
-                  <img src={elektronik} alt="Elektronik" />
-                </div>
-                <p className="font-semibold text-xl text-center">Elektronik</p>
+              <div className="box-border py-7 px-6 h-full">
+                <p className="font-semibold text-2xl mb-3">Adidas Ultraboost</p>
+                <p className="text-2xl font-semibold">Rp. 1.350.000</p>
               </div>
             </div>
           </div>
