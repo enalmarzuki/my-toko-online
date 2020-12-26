@@ -22,12 +22,20 @@ export default function Card(props) {
   }
 
   return (
-    <div className="w-1/1 md:w-1/2 lg:w-4/12 xl:w-3/12 px-4 inline-flex">
-      <div className="bg-white  rounded-xl overflow-hidden">
-        <img src={imgUrl} alt="Terlaris" />
+    <div className="w-1/1 md:w-1/2 lg:w-4/12 xl:w-4/12 px-4 inline-flex">
+      <div className="bg-white rounded-xl overflow-hidden group">
+        <div className="overflow-hidden">
+          <img
+            src={imgUrl}
+            alt={title}
+            className="transform transition-all duration-500 group-hover:scale-110 "
+          />
+        </div>
         <div className="py-8 px-6">
-          <p className="font-semibold text-xl lg:text-2xl mb-3">{title}</p>
-          <p className="text-base lg:text-xl text-gray-500 font-semibold">
+          <a href="/" className="font-semibold text-xl lg:text-xl mb-3">
+            {title}
+          </a>
+          <p className="text-base lg:text-base text-gray-500 font-semibold">
             {price}
           </p>
         </div>

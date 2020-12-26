@@ -19,10 +19,28 @@ module.exports = {
       height: {
         sixPercent: "70%",
       },
+
+      keyframes: {
+        fade: {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
+      },
+
+      animation: {
+        fade: "fade 0.3s ease-in-out forwards",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      scale: ["responsive", "hover", "focus", "group-hover"],
+      transform: ["responsive", "hover", "group-hover"],
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };

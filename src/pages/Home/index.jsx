@@ -21,17 +21,20 @@ import nike from "../../assets/image/nike-jordan.jpg";
 import ipad from "../../assets/image/ipad-pro.jpg";
 import macbook from "../../assets/image/macbook.jpg";
 import airpods from "../../assets/image/airpods.jpg";
+import payOnline from "../../assets/image/pay-online.png";
+import security from "../../assets/image/security.png";
+import pengiriman from "../../assets/image/pengiriman.png";
 
-import TitleSection from "../../parts/TitleSection";
-import Card from "../../components/Card";
-import Slider from "../../parts/Slider";
+import Category from "../../parts/Category";
+import Banner from "../../parts/Banner";
 
-const dataCategory = {
-  allCategorys: {
+const dataCategory = [
+  {
     id: "asd31123",
     title: "Semua Kategori",
     description: "Silahkan Pilih Kategori Yang Tersedia Di Toko Kami",
-    category: [
+    isAllCategory: true,
+    items: [
       {
         id: "asd31123",
         title: "Sepatu Pria",
@@ -85,11 +88,12 @@ const dataCategory = {
       },
     ],
   },
-  produkTerlaris: {
+  {
     id: "asd311231",
     title: "Produk Terlaris",
     description: "Beberapa Produk Paling Laris Yang Ada Di Toko Kami",
-    products: [
+    isAllCategory: false,
+    items: [
       {
         id: "asd31123",
         title: "Guess Clock V2",
@@ -145,30 +149,62 @@ const dataCategory = {
       },
     ],
   },
+];
+
+const featureds = {
+  id: "asfzxc123",
+  feature: [
+    {
+      id: "asfzxc123",
+      title: "Pembayaran Online",
+      description:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, neque. Ad minima voluptas? Cupiditate beatae veniam consectetur animi nihil.",
+      imgUrl: payOnline,
+    },
+
+    {
+      id: "asfzxc123",
+      title: "Pengirim Cepat",
+      description:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, neque. Ad minima voluptas? Cupiditate beatae veniam consectetur animi nihil.",
+      imgUrl: pengiriman,
+    },
+    {
+      id: "asfzxc123",
+      title: "Keamanan",
+      description:
+        " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, neque. Ad minima voluptas? Cupiditate beatae veniam consectetur animi nihil.",
+      imgUrl: security,
+    },
+  ],
 };
 
 export default function Home(props) {
   return (
     <Layout title="Learn Tailwind CSS 2" {...props}>
       <Hero />
-      <TitleSection
-        title={dataCategory.allCategorys.title}
-        desc={dataCategory.allCategorys.description}
-      />
-      <Slider
-        idSlide={dataCategory.allCategorys.id}
-        data={dataCategory.allCategorys.category}
-        isAllCategory
-      />
+      <Category data={dataCategory} />
 
-      <TitleSection
-        title={dataCategory.produkTerlaris.title}
-        desc={dataCategory.produkTerlaris.description}
-      />
-      <Slider
-        idSlide={dataCategory.produkTerlaris.id}
-        data={dataCategory.produkTerlaris.products}
-      />
+      {/* <Container className="my-36 ">
+        <div className="flex flex-wrap -mx-4 justify-center bg-blueSecondary rounded-3xl items-center">
+          <div className="w-6/12 px-4">
+            <img src={payOnline} alt="jam" />
+          </div>
+          <div className="w-1/12 px-4"></div>
+
+          <div className="w-5/12 px-14">
+            <h3 className="text-4xl font-bold mb-6">Pembayaran Online</h3>
+            <p className="text-gray-500 text-xl leading-relaxed mb-7 font-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, neque. Ad, minima voluptas? Cupiditate beatae veniam
+              consectetur animi nihil.
+            </p>
+            <Button.Primary>Mulai Belanja</Button.Primary>
+          </div>
+        </div>
+      </Container> */}
+
+      <Banner data={featureds} />
     </Layout>
   );
 }

@@ -24,6 +24,17 @@
     .shadowSlide {
       filter: drop-shadow(0px 18px 30px rgba(0, 0, 0, 0.1));
     }
+
+    .stretched-link {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      background-color: red;
+      opacity: .1;
+    }
   }
 }
 

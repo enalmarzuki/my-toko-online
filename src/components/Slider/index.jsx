@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Card from "../components/Card";
+import Card from "../Card";
 
-import Container from "../components/Container";
+import Container from "../Container";
 
 export default function Slider(props) {
-  const { data, idSlide, isAllCategory } = props;
+  const { data, idSlide, ...other } = props;
 
   const slideRight = async (e) => {
     const sliderContainer = document.querySelector(`#${idSlide}`);
@@ -18,7 +18,7 @@ export default function Slider(props) {
 
   return (
     <Container>
-      <div className="flex items-center -mx-4 pb-28 px-4 overflow-y-visible">
+      <div className="flex flex-row items-center -mx-4 pb-28 px-4">
         <button
           className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300"
           onClick={slideLeft}
@@ -39,27 +39,18 @@ export default function Slider(props) {
           </svg>
         </button>
         <div
-          className="w-full inline-block whitespace-nowrap overflow-x-scroll scroll  overflow-y-visible smooth-scroll shadowSlide"
+          className="w-full inline-block whitespace-nowrap overflow-x-scroll scroll  overflow-y-visible smooth-scroll shadowSlide  "
           id={idSlide}
         >
-          {data.map((item, i) =>
-            isAllCategory ? (
-              <Card
-                key={i}
-                imgUrl={item.imgUrl}
-                title={item.title}
-                price={item.price === undefined ? null : item.price}
-                isAllCategory
-              />
-            ) : (
-              <Card
-                key={i}
-                imgUrl={item.imgUrl}
-                title={item.title}
-                price={item.price}
-              />
-            )
-          )}
+          {data.map((item, i) => (
+            <Card
+              key={i}
+              imgUrl={item.imgUrl}
+              title={item.title}
+              price={item.price ?? ""}
+              {...other}
+            />
+          ))}
         </div>
         <button
           className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300"
