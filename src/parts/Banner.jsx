@@ -80,7 +80,7 @@ export default function Slider(props) {
   };
 
   return (
-    <Container className="mt-24">
+    <Container className="mt-24 mb-32">
       <div className="flex flex-row items-center -mx-4 pb-28 px-4">
         <button
           className="mr-2 lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300"
