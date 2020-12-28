@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../components/Button";
 import Container from "../components/Container";
-import hero from "../assets/image/hero.png";
+// import hero from "../assets/images/image/hero.png";
+import { images } from "../assets/images";
 
 export default function Hero(props) {
   return (
@@ -21,7 +22,7 @@ export default function Hero(props) {
         </div>
 
         <div className="w-full sm:w-1/2 lg:w-7/12 px-4">
-          <img src={hero} alt="Illustrasi-hero" />
+          <img src={images.hero} alt="Illustrasi-hero" />
         </div>
       </div>
     </Container>

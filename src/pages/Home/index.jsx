@@ -4,26 +4,7 @@ import Layout from "../../components/Layout";
 import Hero from "../../parts/Hero";
 // import Button from "../../components/Button";
 
-import sepatuPria from "../../assets/image/sepatu-pria.png";
-import sepatuWanita from "../../assets/image/sepatu-wanita.png";
-import tasPria from "../../assets/image/tas-pria.png";
-import tasWanita from "../../assets/image/tas-wanita.png";
-import pakaianPria from "../../assets/image/pakaian-pria.png";
-import pakaianWanita from "../../assets/image/pakaian-wanita.png";
-import jamTangan from "../../assets/image/jam-tangan.png";
-import elektronik from "../../assets/image/elektronik.png";
-import laptop from "../../assets/image/laptop.png";
-import sepatu from "../../assets/image/sepatu.jpg";
-import jam from "../../assets/image/jam-tangan.jpg";
-import hp from "../../assets/image/hp.jpg";
-import camera from "../../assets/image/camera.jpg";
-import nike from "../../assets/image/nike-jordan.jpg";
-import ipad from "../../assets/image/ipad-pro.jpg";
-import macbook from "../../assets/image/macbook.jpg";
-import airpods from "../../assets/image/airpods.jpg";
-import payOnline from "../../assets/image/pay-online.png";
-import security from "../../assets/image/security.png";
-import pengiriman from "../../assets/image/pengiriman.png";
+import { images } from "../../assets/images";
 
 import Category from "../../parts/Category";
 import Banner from "../../parts/Banner";
@@ -38,53 +19,53 @@ const dataCategory = [
       {
         id: "asd31123",
         title: "Sepatu Pria",
-        imgUrl: sepatuPria,
+        imgUrl: images.sepatuPria,
       },
 
       {
         id: "asd31123",
         title: "Sepatu Wanita",
-        imgUrl: sepatuWanita,
+        imgUrl: images.sepatuWanita,
       },
 
       {
         id: "asd31123",
         title: "Tas Pria",
-        imgUrl: tasPria,
+        imgUrl: images.tasPria,
       },
       {
         id: "asd31123",
         title: "Tas Wanita",
-        imgUrl: tasWanita,
+        imgUrl: images.tasWanita,
       },
 
       {
         id: "asd31123",
         title: "Pakaian Pria",
-        imgUrl: pakaianPria,
+        imgUrl: images.pakaianPria,
       },
 
       {
         id: "asd31123",
         title: "Pakaian Wanita",
-        imgUrl: pakaianWanita,
+        imgUrl: images.pakaianWanita,
       },
       {
         id: "asd31123",
         title: "Jam Tangan",
-        imgUrl: jamTangan,
+        imgUrl: images.jamTangan,
       },
 
       {
         id: "asd31123",
         title: "Laptop",
-        imgUrl: laptop,
+        imgUrl: images.laptop,
       },
 
       {
         id: "asd31123",
         title: "Elektronik",
-        imgUrl: elektronik,
+        imgUrl: images.elektronik,
       },
     ],
   },
@@ -98,54 +79,115 @@ const dataCategory = [
         id: "asd31123",
         title: "Guess Clock V2",
         price: "Rp. 450.000",
-        imgUrl: jam,
+        imgUrl: images.jam,
       },
 
       {
         id: "asd31123",
         title: "Adidas Ultraboost",
         price: "Rp. 1.350.000",
-        imgUrl: sepatu,
+        imgUrl: images.sepatu,
       },
 
       {
         id: "asd31123",
         title: "Iphone X 64GB",
         price: "Rp. 10.550.000",
-        imgUrl: hp,
+        imgUrl: images.hp,
       },
       {
         id: "asd31123",
         title: "Sony DSLR V12",
         price: "Rp. 5.650.000",
-        imgUrl: camera,
+        imgUrl: images.camera,
       },
 
       {
         id: "asd31123",
         title: "Nike Jordan",
         price: "Rp. 1.450.000",
-        imgUrl: nike,
+        imgUrl: images.nike,
       },
 
       {
         id: "asd31123",
         title: "Ipad Pro",
         price: "Rp. 6.450.000",
-        imgUrl: ipad,
+        imgUrl: images.ipad,
       },
       {
         id: "asd31123",
         title: "Macbook Pro 2020",
         price: "Rp. 23.450.000",
-        imgUrl: macbook,
+        imgUrl: images.macbook,
       },
 
       {
         id: "asd31123",
         title: "Airpods",
         price: "Rp. 1.250.000",
-        imgUrl: airpods,
+        imgUrl: images.airpods,
+      },
+    ],
+  },
+  {
+    id: "asd31123112",
+    title: "Produk Terbaru",
+    description: "Beberapa Produk Terbaru Yang Ada Di Toko Kami",
+    isAllCategory: false,
+    items: [
+      {
+        id: "asd31123",
+        title: "Iphone 12 Pro Max",
+        price: "Rp. 20.499.000",
+        imgUrl: images.terbaru1,
+      },
+
+      {
+        id: "asd31123",
+        title: "Apple Watch Series 5",
+        price: "Rp. 7.299.000",
+        imgUrl: images.terbaru2,
+      },
+
+      {
+        id: "asd31123",
+        title: "iMac 27 inci",
+        price: "Rp. 20.550.000",
+        imgUrl: images.terbaru3,
+      },
+      {
+        id: "asd31123",
+        title: "Kacamata Anti Radiasi",
+        price: "Rp. 750.000",
+        imgUrl: images.terbaru4,
+      },
+
+      {
+        id: "asd31123",
+        title: "Tanaman Sintetis",
+        price: "Rp. 350.000",
+        imgUrl: images.terbaru5,
+      },
+
+      {
+        id: "asd31123",
+        title: "Kalung Emas 999",
+        price: "Rp. 3.450.000",
+        imgUrl: images.terbaru7,
+      },
+      {
+        id: "asd31123",
+        title: "Kacamata Eliza S",
+        price: "Rp. 450.000",
+        imgUrl: images.terbaru6,
+      },
+
+      {
+        id: "asd31123",
+        title: "Harman / Kardon",
+        price: "Rp. 4.250.000",
+        imgUrl: images.terbaru8,
       },
     ],
   },
@@ -159,7 +201,7 @@ const featureds = {
       title: "Pembayaran Online",
       description:
         " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, neque. Ad minima voluptas? Cupiditate beatae veniam consectetur animi nihil.",
-      imgUrl: payOnline,
+      imgUrl: images.payOnline,
     },
 
     {
@@ -167,14 +209,14 @@ const featureds = {
       title: "Pengirim Cepat",
       description:
         " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, neque. Ad minima voluptas? Cupiditate beatae veniam consectetur animi nihil.",
-      imgUrl: pengiriman,
+      imgUrl: images.pengiriman,
     },
     {
       id: "asfzxc123",
       title: "Keamanan",
       description:
         " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, neque. Ad minima voluptas? Cupiditate beatae veniam consectetur animi nihil.",
-      imgUrl: security,
+      imgUrl: images.security,
     },
   ],
 };
@@ -184,7 +226,6 @@ export default function Home(props) {
     <Layout title="Learn Tailwind CSS 2" {...props}>
       <Hero />
       <Category data={dataCategory} />
-
       <Banner data={featureds} />
     </Layout>
   );
