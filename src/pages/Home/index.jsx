@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "../../components/Container";
+// import Container from "../../components/Container";
 import Layout from "../../components/Layout";
 import Hero from "../../parts/Hero";
-import Button from "../../components/Button";
+// import Button from "../../components/Button";
 
 import sepatuPria from "../../assets/image/sepatu-pria.png";
 import sepatuWanita from "../../assets/image/sepatu-wanita.png";
@@ -184,25 +184,6 @@ export default function Home(props) {
     <Layout title="Learn Tailwind CSS 2" {...props}>
       <Hero />
       <Category data={dataCategory} />
-
-      {/* <Container className="my-36 ">
-        <div className="flex flex-wrap -mx-4 justify-center bg-blueSecondary rounded-3xl items-center">
-          <div className="w-6/12 px-4">
-            <img src={payOnline} alt="jam" />
-          </div>
-          <div className="w-1/12 px-4"></div>
-
-          <div className="w-5/12 px-14">
-            <h3 className="text-4xl font-bold mb-6">Pembayaran Online</h3>
-            <p className="text-gray-500 text-xl leading-relaxed mb-7 font-body">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda, neque. Ad, minima voluptas? Cupiditate beatae veniam
-              consectetur animi nihil.
-            </p>
-            <Button.Primary>Mulai Belanja</Button.Primary>
-          </div>
-        </div>
-      </Container> */}
 
       <Banner data={featureds} />
     </Layout>
