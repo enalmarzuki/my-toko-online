@@ -20,7 +20,7 @@ export default function Slider(props) {
     <Container>
       <div className="flex flex-row items-center -mx-4 pb-28 px-4">
         <button
-          className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300"
+          className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300 z-20"
           onClick={slideLeft}
         >
           <svg
@@ -45,6 +45,7 @@ export default function Slider(props) {
           {data.map((item, i) => (
             <Card
               key={i}
+              id={item.id}
               imgUrl={item.imgUrl}
               title={item.title}
               price={item.price ?? ""}
@@ -53,7 +54,7 @@ export default function Slider(props) {
           ))}
         </div>
         <button
-          className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300"
+          className="hidden lg:flex focus:outline-none rounded-full focus:ring-2 focus:ring-blue-300 z-20"
           onClick={slideRight}
         >
           <svg

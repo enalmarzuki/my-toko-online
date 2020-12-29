@@ -9,8 +9,8 @@ function Navbar(props) {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <div className="container px-6 md:px-10 lg:pt-8 xl:px-10">
-      <div className="bg-white pt-5">
+    <div className="container px-6 md:px-10 lg:py-8 xl:px-10 ">
+      <div className="bg-white">
         <div className="flex flex-col lg:flex-row">
           <div className="flex items-center justify-between ">
             <div>

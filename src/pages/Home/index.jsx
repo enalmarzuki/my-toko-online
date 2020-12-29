@@ -19,53 +19,53 @@ const dataCategory = [
     isAllCategory: true,
     items: [
       {
-        id: "asd31123",
+        id: "zxcz123",
         title: "Sepatu Pria",
         imgUrl: images.sepatuPria,
       },
 
       {
-        id: "asd31123",
+        id: "hdfgh23r4",
         title: "Sepatu Wanita",
         imgUrl: images.sepatuWanita,
       },
 
       {
-        id: "asd31123",
+        id: "xcxcasd123",
         title: "Tas Pria",
         imgUrl: images.tasPria,
       },
       {
-        id: "asd31123",
+        id: "fvbaa324",
         title: "Tas Wanita",
         imgUrl: images.tasWanita,
       },
 
       {
-        id: "asd31123",
+        id: "hsfasf213",
         title: "Pakaian Pria",
         imgUrl: images.pakaianPria,
       },
 
       {
-        id: "asd31123",
+        id: "hjfgj45",
         title: "Pakaian Wanita",
         imgUrl: images.pakaianWanita,
       },
       {
-        id: "asd31123",
+        id: "cvxce3",
         title: "Jam Tangan",
         imgUrl: images.jamTangan,
       },
 
       {
-        id: "asd31123",
+        id: "qws3dsf",
         title: "Laptop",
         imgUrl: images.laptop,
       },
 
       {
-        id: "asd31123",
+        id: "asfcweer21",
         title: "Elektronik",
         imgUrl: images.elektronik,
       },
@@ -78,54 +78,54 @@ const dataCategory = [
     isAllCategory: false,
     items: [
       {
-        id: "asd31123",
+        id: "xcvxc332",
         title: "Guess Clock V2",
         price: "Rp. 450.000",
         imgUrl: images.jam,
       },
 
       {
-        id: "asd31123",
+        id: "qwewae12",
         title: "Adidas Ultraboost",
         price: "Rp. 1.350.000",
         imgUrl: images.sepatu,
       },
 
       {
-        id: "asd31123",
+        id: "fgjh334",
         title: "Iphone X 64GB",
         price: "Rp. 10.550.000",
         imgUrl: images.hp,
       },
       {
-        id: "asd31123",
+        id: "zxasd23",
         title: "Sony DSLR V12",
         price: "Rp. 5.650.000",
         imgUrl: images.camera,
       },
 
       {
-        id: "asd31123",
+        id: "sdfaawr2",
         title: "Nike Jordan",
         price: "Rp. 1.450.000",
         imgUrl: images.nike,
       },
 
       {
-        id: "asd31123",
+        id: "jdfhdf4",
         title: "Ipad Pro",
         price: "Rp. 6.450.000",
         imgUrl: images.ipad,
       },
       {
-        id: "asd31123",
+        id: "xerwe23",
         title: "Macbook Pro 2020",
         price: "Rp. 23.450.000",
         imgUrl: images.macbook,
       },
 
       {
-        id: "asd31123",
+        id: "423fcx",
         title: "Airpods",
         price: "Rp. 1.250.000",
         imgUrl: images.airpods,
@@ -229,46 +229,6 @@ export default function Home(props) {
       <Hero />
       <Category data={dataCategory} />
       <Banner data={featureds} />
-
-      <Container>
-        <div className="flex flex-wrap -mx-4 mb-24">
-          <div className="w-full lg:w-4/12 px-4">
-            <Link to="/" className="text-3xl font-bold ">
-              <span className="text-blue-500">Online</span>Shop.
-            </Link>
-            <p className="text-gray-500 mt-4 text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              architecto, vero amet officiis corporis voluptates?
-            </p>
-          </div>
-          <div className="hidden lg:flex lg:w-2/12 lg:px-4"></div>
-          <div className="w-full lg:w-3/12 px-4 mt-10 lg:mt-0">
-            <p className="font-body text-2xl font-bold mb-3">Build Using</p>
-            <p className="font-body text-gray-500 text-xl mb-1">React JS</p>
-            <p className="font-body text-gray-500 text-xl">Tailwind CSS</p>
-          </div>
-          <div className="w-full lg:w-3/12 px-4 mt-10 lg:mt-0">
-            <p className="font-body  text-2xl font-bold mb-3">Kontak Kami</p>
-            <p className="font-body text-gray-500 text-xl mb-1">
-              onlineshop@myshop.co.id
-            </p>
-            <p className="font-body text-gray-500 text-xl mb-1">
-              0411 123 4321
-            </p>
-            <p className="font-body text-gray-500 text-xl mb-1">
-              Makassar, Sulawesi Selatan
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap -mx-4 pb-10">
-          <div className="w-full px-4 justify-center">
-            <p className="font-body text-xl mb-1 text-center text-gray-500">
-              Copyright • 2020 All rights reserved • OnlineShop
-            </p>
-          </div>
-        </div>
-      </Container>
     </Layout>
   );
 }
